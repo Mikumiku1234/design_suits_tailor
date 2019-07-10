@@ -88,6 +88,7 @@ a {
   display: inline-block;
   opacity: 0.8;
   border-radius: 4px;
+  font-family: serif;
 
 }
 
@@ -106,6 +107,7 @@ header {
   position :fixed;
   top: 0;
   z-index: 10;
+
 }
 
 .logo {
@@ -129,6 +131,8 @@ header {
   display: block;
   float: left;
   transition: all 0.5s;
+  font-family: Monotype Corsiva;
+  font-size: 15px;
 }
 
 .header-right a:hover {
