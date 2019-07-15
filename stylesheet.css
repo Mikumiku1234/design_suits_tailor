@@ -11,10 +11,6 @@ a {
   text-decoration: none;
 }
 
-.clear {
-  clear: left;
-}
-
 .container {
   max-width: 1170px;
   width: 100%;
@@ -139,6 +135,36 @@ header {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* デフォルトではメニューアイコンは非表示に */
+  display: none;
+}
+
+.header-right1{
+  display: none;
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right1 a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+  font-family: Monotype Corsiva;
+  font-size: 15px;
+}
+
+.header-right1 a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 footer img {
   width: 100px;
 }
@@ -157,10 +183,13 @@ footer {
 
 .footer-left{
   float: left;
-  width: 500px;
 }
 
 .footer-right{
   float: right;
   margin-top: 20px;
+}
+
+.clear{
+ clear: right;
 }
