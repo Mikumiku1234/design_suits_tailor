@@ -1,195 +1,65 @@
-* {
-  box-sizing: border-box;
+/* タブレット向けレイアウト */
+@media all and (max-width: 1000px) {
+
+
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+  }
 }
 
-body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-}
+/* スマホ向けレイアウト */
+@media all and (max-width: 670px) {
 
-a {
-  text-decoration: none;
-}
+  .btn {
+    padding: 2px 2px;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    font: none;
 
-.container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.top-wrapper {
-  padding: 150px 0 100px 0;
-  background-image: url("top.jpg");
-  background-size: cover;
-  color: white;
-  text-align: center;
-}
-
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 40px;
-  letter-spacing: 5px;
-  font-weight: normal;
-  font-family: Monotype Corsiva;
-}
-
-.top-wrapper p {
-  font-size: 30px;
-  opacity: 0.7;
-  font-family: serif;
-}
-
-.message p{
-  font-size: 15px;
-  opacity: 0.7;
-  font-family: serif;
-}
-
-.accent{
-  color: red;
-  font-size: 18px;
-}
-
-.daihyo{
-  font-family: 'HGP行書体';
-  color: white;
-  font-size: 18px;
-  font-weight: normal;
-}
+  }
 
 
-.btn-wrapper p {
-  margin: 10px 0;
-}
+  .top-wrapper {
+    text-align: center;
+  }
 
+  /* header-rightクラスのdisplayをnoneに指定してください */
+  .header-right{
+    display: none;
+  }
 
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
+  /* menu-iconクラスのdisplayをblockに指定してください  */
+  .menu-icon{
+    display: block;
+  }
 
-.twitter {
-  background-color: #55acee;
-  margin-right: 10px;
-}
+  .menu-icon:active{
+    .header-right1{
+      display: block;
+    }
+  }
 
-.instagram {
-  background-color: #A901DB;
-}
+  .top-wrapper h1 {
+    font-size: 24px;
+  }
 
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  font-family: serif;
-
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fab {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-
-}
-
-.logo {
-  height: 65px;
-  margin-top: 0px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-  font-family: Monotype Corsiva;
-  font-size: 15px;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  /* デフォルトではメニューアイコンは非表示に */
-  display: none;
-}
-
-.header-right1{
-  display: none;
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right1 a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-  font-family: Monotype Corsiva;
-  font-size: 15px;
-}
-
-.header-right1 a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-footer img {
-  width: 100px;
-}
-
-footer p {
-  color: white;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 20px;
-  height: 125px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-}
+  .top-wrapper p {
+    font-size: 14px;
+  }
 
 .footer-left{
   float: left;
 }
 
-.footer-right{
-  float: right;
-  margin-top: 20px;
-}
+  .footer-right{
+    float: right;
+  }
 
-.clear{
- clear: right;
+
+
 }
