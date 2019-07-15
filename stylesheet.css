@@ -1,65 +1,253 @@
-/* タブレット向けレイアウト */
-@media all and (max-width: 1000px) {
-
-
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
-    font-size: 20px;
-  }
+* {
+  box-sizing: border-box;
 }
 
-/* スマホ向けレイアウト */
-@media all and (max-width: 670px) {
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
 
-  .btn {
-    padding: 2px 2px;
-    display: inline-block;
-    opacity: 0.8;
-    border-radius: 4px;
-    font: none;
+a {
+  text-decoration: none;
+}
 
-  }
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 150px 0 100px 0;
+  background-image: url("top.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-weight: normal;
+  font-family: Monotype Corsiva;
+}
+
+.top-wrapper p {
+  font-size: 30px;
+  opacity: 0.7;
+  font-family: serif;
+}
+
+.message p{
+  font-size: 15px;
+  opacity: 0.7;
+  font-family: serif;
+}
+
+.accent{
+  color: red;
+  font-size: 18px;
+}
+
+.daihyo{
+  font-family: 'HGP行書体';
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+}
 
 
-  .top-wrapper {
-    text-align: center;
-  }
+.btn-wrapper p {
+  margin: 10px 0;
+}
 
-  /* header-rightクラスのdisplayをnoneに指定してください */
-  .header-right{
-    display: none;
-  }
 
-  /* menu-iconクラスのdisplayをblockに指定してください  */
-  .menu-icon{
-    display: block;
-  }
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
 
-  .menu-icon:active{
-    .header-right1{
-      display: block;
-    }
-  }
+.twitter {
+  background-color: #55acee;
+  margin-right: 10px;
+}
 
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
+.instagram {
+  background-color: #A901DB;
+}
 
-  .top-wrapper p {
-    font-size: 14px;
-  }
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  font-family: serif;
+
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fab {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  height: 65px;
+  margin-top: 0px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+  font-family: Monotype Corsiva;
+  font-size: 15px;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.menu {
+	display: none;
+	overflow: hidden;
+	width: 60px;
+  line-height: 60px;
+  float: right;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease-in-out;
+	        transition: all 0.5s ease-in-out;
+	border-radius: 50%;
+}
+.menu div.menubar {
+	width: 30px;
+	margin: 17px auto;
+}
+.menu div.menubar .bar {
+	display: block;
+	width: 100%;
+	height: 5px;
+	border-radius: 2px;
+	background-color: white;
+  margin: 5px;
+}
+.menu ul {
+	display: none;
+
+	list-style-type: none;
+	-webkit-transition: all 0.5s ease;
+	        transition: all 0.5s ease;
+	float: left;
+	opacity: 0;
+  padding: 10px 10px;
+
+}
+.menu ul li {
+	display: inline-block;
+  width: 100%;
+  text-align: center;
+
+}
+.menu ul li a {
+	display: inline-block;
+  padding: 10px 10px;
+	-webkit-transition: all 0.3s ease-in;
+	        transition: all 0.3s ease-in;
+	text-decoration: none;
+	color: white;
+	height: 56px;
+	line-height: 2em;
+  width: 100%;
+  font-family: Monotype Corsiva;
+}
+.menu ul li a:hover {
+	color: #ffffff;
+	background-color: #1b2538;
+}
+.menu ul li a:target {
+	border-bottom-color: #1b2538;
+}
+/* クリックした時の動き */
+#cp_navimenuid {
+  display: none;
+}
+
+#cp_navimenuid:checked ~ .menu {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  border-radius: 0;
+  height: 5000px;
+  width: 15%;
+	background-color: rgba(34, 49, 52, 0.9);
+}
+#cp_navimenuid:checked ~ .menu > ul {
+	display: block;
+	opacity: 1;
+}
+#cp_navimenuid:checked ~ .menu > .menubar {
+	display: none;
+}
+
+
+
+footer img {
+  width: 100px;
+}
+
+footer p {
+  color: white;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 20px;
+  height: 125px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+}
 
 .footer-left{
   float: left;
 }
 
-  .footer-right{
-    float: right;
-  }
+.footer-right{
+  float: right;
+  margin-top: 20px;
+}
 
-
-
+.clear{
+ clear: right;
 }
